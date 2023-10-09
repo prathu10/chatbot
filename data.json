@@ -1,0 +1,171 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello, thanks for asking", "Hello,Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!",  "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "no_answer",
+     "patterns": [" "],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+     "responses": ["I can help you provide precaution based on your symptoms"],
+     "context": [""]
+    },
+    {"tag": "hospital_search",
+     "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+     "responses": ["Please provide name"],
+     "context": ["search_hospital_by"]
+    },
+    {"tag": "400053",
+     "patterns": [" 400053","Kokilaben Dhirubhai Ambani Hospital"],
+     "responses": ["Kokilaben Dhirubhai Ambani Hospital:-Rao Saheb, Achutrao Patwardhan Marg, Four Bungalows, Andheri West, Mumbai, Maharashtra 400053"],
+     "context": [""]
+    },
+    {"tag": "400056",
+     "patterns": ["400056","Nanavati Max Super Speciality Hospital"],
+     "responses": ["Nanavati Max Super Speciality Hospital:-LIC Colony, Suresh Colony, Vile Parle West, Mumbai, Maharashtra 400056"],
+     "context": [""]
+    },
+    {"tag": "400012",
+    "patterns": ["400012","Global Hospitals","Global Hospital"],
+    "responses": ["Global Hospitals :-35, Dr Ernest Borges Rd, opp. Shirodkar High School, Parel East, Parel, Mumbai, Maharashtra 400012"],
+    "context": [""]
+   },
+   {"tag": "400016",
+     "patterns": ["400016","S L Raheja Hospital "],
+     "responses": ["S L Raheja Hospital- Fortis:- Raheja Rugnalaya Marg, Mahim West, Mahim, Mumbai, Maharashtra 400016 "],
+     "context": [""]
+    },
+    {"tag": "400050",
+     "patterns": ["400050","Lilavati Hospital"],
+     "responses": ["Lilavati Hospital:-A-791, A-791, Bandra Reclamation Rd, General Arunkumar Vaidya Nagar, Bandra West, Mumbai, Maharashtra 400050"],
+     "context": [""]
+    },
+    {"tag": "Food allergy",
+     "patterns": ["Tingling or itching in the mouth","Food allergy","Abdominal pain", "vomiting","Dizziness","diarrhoea"],
+     "responses": ["Allergies, also known as allergic diseases, are a number of conditions caused by hypersensitivity of the immune system to typically harmless substances in the environment.These diseases include hay fever,food allergies,atopic dermatitis,allergic asthma, and anaphylaxis.Symptoms may include red eyes, an itchy rash,sneezing, a runny nose,shortness of breath, or swelling.Food intolerances and food poisoning are separate conditions.Precaution:-apply calamine,cover area with bandage,use ice to compress itching"],
+     "context": [""]
+    },
+    {"tag": "Flu",
+     "patterns": ["fever","dry","chesty cough","runny nose","Flu", "blocked nose"],
+     "responses": ["Flu-Can be cured by drinking plenty of water and other non-alcoholic fluids to prevent dehydration,eating a healthy diet with plenty of fruit and vegetables,keeping warm"],
+     "context": [""]
+    },
+    {"tag": "Pneumonia",
+     "patterns": ["mild fever","Pneumonia","chest pain","reduced appetite","shortness of breath","chills"],
+     "responses": ["Pneumonia-Can be cured with Oral antibiotics can treat most cases of bacterial pneumonia,Cool compresses can work to relieve a fever. Drinking warm water or having a nice warm bowl of soup can help with chills. "],
+     "context": [""]
+    },
+    {"tag": "Eczema",
+     "patterns": ["itch","Eczema","inflamed discoloured skin","oozing","crusting","scaly skin"],
+     "responses": ["Eczema-Can be cured by implementing a daily bathing and moisturizing routine,Use OTC creams and prescription medication consistently and as prescribed,Know your triggers so that you can avoid exposure"],
+     "context": [""]
+    },
+    {"tag": "Jaundice",
+     "patterns": ["fever","Jaundice","chills","change in skin colour","dark coloured urine","clay coloured stool"],
+     "responses": ["Jaundice-Can be cured by maintaining a healthy weight,managing your cholesterol, use cholestyramine.Precaution:-drink plenty of water,consume milk thistle,eat fruits and high fiberous food,medication "],
+     "context": [""]
+    },
+    {"tag": "Fungal infection",
+     "patterns": ["Fungal infection","itching","skin rash","nodal skin eruptions"],
+     "responses": ["A fungal infection, also called mycosis, is a skin disease caused by a fungus. There are millions of species of fungi. They live in the dirt, on plants, on household surfaces, and on your skin. Sometimes, they can lead to skin problems like rashes or bumps.Precaution:-bath twice,use detol or neem in bathing water,keep infected area dry,use clean cloths"],
+     "context": [""]
+    },
+    {"tag": "GERD",
+     "patterns": ["GERD","stomach pain","acidity","ulcers on tongue","vomiting","cough","chest pain"],
+     "responses": ["Gastroesophageal reflux disease(GERD), is a chronic condition in which stomach contents rise up into the esophagus, resulting in either symptoms or complications.Symptoms include the taste of acid in the back of the mouth,heartburn,bad breath,chest pain, regurgitation, breathing problems, and wearing away of the teeth.Complications include esophagitis, esophageal stricture, and Barrett's esophagus.Precaution:-avoid fatty spicy food,avoid lying down after eating,maintain healthy weight,exercise"],
+     "context": [""]
+    },
+    {"tag": "Chronic cholestasis",
+     "patterns": ["Chronic cholestasis","yellowing of eyes","abdominal pain","nausea","loss of appetite","vomiting"],
+     "responses": ["Cholecystitis is inflammation of the gallbladder.Symptoms include right upper abdominal pain, nausea, vomiting, and occasionally fever.Often gallbladder attacks(biliary colic) precede acute cholecystitis.The pain lasts longer in cholecystitis than in a typical gallbladder attack.Without appropriate treatment, recurrent episodes of cholecystitis are common.Complications of acute cholecystitis include gallstone pancreatitis,common bile duct stones, or inflammation of the common bile duct.Precaution:-cold baths,anti itch medicine,eat healthy,consult doctor"],
+     "context": [""]
+    },
+    {"tag": "Drug Reaction",
+     "patterns": ["Drug Reaction","burning micturition","spotting urination","stomach pain","skin rash","itching"],
+     "responses": ["An adverse drug reaction (ADR) is an injury caused by taking medication.ADRs may occur following a single dose or prolonged administration of a drug or result from the combination of two or more drugs. The meaning of this term differs from the term (side effect) because side effects can be beneficial as well as detrimental.The study of ADRs is the concern of the field known as pharmacovigilance. An adverse drug event(ADE) refers to any injury occurring at the time a drug is used, whether or not it is identified as a cause of the injury.An ADR is a special type of ADE in which a causative relationship can be shown. ADRs are only one type of medication-related harm, as harm can also be caused by omitting to take indicated medications.Precaution:-stop irritation,stop taking drug,consult nearest hospital"],
+     "context": [""]
+    },
+    {"tag": "AIDS",
+     "patterns": ["AIDS","extra marital contacts","high fever","patches in throat","muscle wasting"],
+     "responses": ["AIDS-Human immunodeficiency virus infection and acquired immunodeficiency syndrome(HIV/AIDS) is a spectrum of conditions caused by infection with the human immunodeficiency virus(HIV),a retrovirus.Following initial infection a person may not notice any symptoms, or may experience a brief period of influenza-like illness.Typically, this is followed by a prolonged period with no symptoms.If the infection progresses, it interferes more with the immune system, increasing the risk of developing common infections such as tuberculosis, as well as other opportunistic infections, and tumors which are otherwise rare in people who have normal immune function.These late symptoms of infection are referred to as acquired immunodeficiency syndrome (AIDS).This stage is often also associated with unintended weight loss.Precaution:-avoid open cuts,wear ppe if possible,consult doctor"],
+     "context": [""]
+    },
+    {"tag": "Common Cold",
+     "patterns": ["Common Cold","muscle pain","loss of smell","chest pain","congestion","runny nose","sinus pressure","redness of eyes","throat irritation","phlegm","malaise","swelled lymph nodes","headache","high fever","cough","fatigue","chills","continuous sneezing"],
+     "responses": ["Common Cold-The common cold, also known simply as a old, is a viral infectious disease of the upper respiratory tract that primarily affects the respiratory mucosa of the nose,throat,sinuses, and larynx.Signs and symptoms may appear less than two days after exposure to the virus.These may include coughing,sore throat,runny nose,sneezing,headache, andever.People usually recover in seven to ten days,but some symptoms may last up to three weeks.Occasionally, those with other health problems may develop pneumonia.Precaution:-drink vitamin c rich drinks,take vapour,avoid cold food,keep fever in check"],
+     "context": [""]
+    },
+    {"tag": "Diabetes",
+     "patterns": ["Diabetes","polyuria","increased appetite","excessive hunger","obesity","blurred and distorted vision","irregular sugar level","lethargy","restlessness","weight loss","fatigue"],
+     "responses": ["Diabetes-Diabetes mellitus (DM), commonly known as diabetes, is a group of metabolic disorders characterized by a high blood sugar level over a prolonged period of time.Symptoms often include frequent urination,increased thirst and increased appetite.If left untreated, diabetes can cause many health complications.Acute complications can include diabetic ketoacidosis,hyperosmolar hyperglycemic state, or death.Serious long-term complications include cardiovascular disease, stroke,chronic kidney disease,foot ulcers,damage to the nerves,damage to the eyes and cognitive impairment.Precaution:-have balanced diet,exercise,consult doctor"],
+     "context": [""]
+    },
+    {"tag": "Pneumonia",
+     "patterns": ["Pneumonia","rusty sputum","fast heart rate","chest pain","phlegm","malaise","sweating","breathlessness","high fever","cough","fatigue","chills"],
+     "responses": ["Pneumonia-Pneumonia is an inflammatory condition of the lung primarily affecting the small air sacs known as alveoli.Symptoms typically include some combination of productive or dry cough, chest pain, fever and difficulty breathing.The severity of the condition is variable.Pneumonia is usually caused by infection with viruses or bacteria, and less commonly by other microorganisms.Identifying the responsible pathogen can be difficult. Diagnosis is often based on symptoms and physical examination.Chest X-rays, blood tests, and culture of the sputum may help confirm the diagnosis.The disease may be classified by where it was acquired, such as community- or hospital-acquired or healthcare-associated pneumonia.Precaution:-consult doctor,medication,rest,"],
+     "context": [""]
+    },
+    {"tag": "Chronic cholestasis",
+     "patterns": ["Chronic cholestasis","yellowing of eyes","vomiting"],
+     "responses": ["Chronic cholestasis-Cholecystitis is inflammation of the gallbladder.Symptoms include right upper abdominal pain, nausea, vomiting, and occasionally fever.Often gallbladder attacks(biliary colic) precede acute cholecystitis.The pain lasts longer in cholecystitis than in a typical gallbladder attack.Without appropriate treatment, recurrent episodes of cholecystitis are common.Complications of acute cholecystitis include gallstone pancreatitis,common bile duct stones, or inflammation of the common bile duct.Precaution:-cold bathsanti itch medicine,consult doctor,eat healthy"],
+     "context": [""]
+    },
+    {"tag": "Peptic ulcer disease",
+     "patterns": ["Peptic ulcer disease","internal itching","passage of gases","abdominal pain","loss of appetite","indigestion","vomiting"],
+     "responses": ["Peptic ulcer disease-Peptic ulcer disease(PUD) is a break in the inner lining of the stomach, the first part of the small intestine, or sometimes the lower esophagus.An ulcer in the stomach is called a gastric ulcer, while one in the first part of the intestines is a duodenal ulcer.The most common symptoms of a duodenal ulcer are waking at night with upper abdominal pain and upper abdominal pain that improves with eating.With a gastric ulcer, the pain may worsen with eating.The pain is often described as a burning or dull ache.Other symptoms include belching, vomiting, weight loss, or poor appetite.About a third of older people have no symptoms.Complications may include bleeding,perforation, and blockage of the stomach.Bleeding occurs in as many as 15% of cases.Precaution:-avoid fatty spicy foodconsume probiotic food,eliminate milk,limit alcohol"],
+     "context": [""]
+    },
+    {"tag": "Gastroenteritis",
+     "patterns": ["Gastroenteritis","diarrhoea","dehydration","sunken eyes","vomiting"],
+     "responses": ["Gastroenteritis-Gastroenteritis is a medical term for inflammation of the stomach and intestines. It causes diarrhea,vomiting and stomach pain. It usually happens because of infection by a virus or bacteria.Precaution:-stop eating solid food for while,try taking small sips of water,rest,ease back into eating"],
+     "context": [""]
+    },
+    {"tag": "Bronchial Asthma",
+     "patterns": ["Bronchial Asthma","mucoid sputum","family history","breathlessness","high fever","fatigue"],
+     "responses": ["Bronchial Asthma-Asthma(or Asthma bronchiale) is a disease that hurts the airways inside the lungs. It causes the tissue inside the airways to swell. Asthma also causes the bands of muscle around the airways to become narrow. This makes it hard for enough air to pass through and for the person to breathe normally. Asthma also causes mucus-making cells inside the airways to make more mucus than normal. This blocks the airways, which are already very narrow during an asthma attack, and makes it even more difficult to breathe.Precaution:-switch to loose cloothing,take deep breaths,get away from trigger,seek help"],
+     "context": [""]
+    },
+    {"tag": "Hypertension",
+     "patterns": ["Hypertension","lack of concentration","loss of balance","dizziness","chest pain","headache"],
+     "responses": ["Hypertension-Hypertension(HTN or HT), also known as high blood pressure(HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated.High blood pressure typically does not cause symptoms.Long-term high blood pressure, however, is a major risk factor for stroke,coronary artery disease,heart failure,atrial fibrillation,peripheral arterial disease,vision loss,chronic kidney disease, and dementia.Precaution:-meditation,salt baths,reduce stress,get proper sleep"],
+     "context": [""]
+    },
+    {"tag": "Dengue",
+     "patterns": ["Dengue","red spots over body","muscle pain","malaise","back pain","pain behind the eyes","loss of appetite","nausea","headache","high fever","fatigue","vomiting","joint pain","chills","skin rash"],
+     "responses": ["Dengue-Dengue is a mosquito-borne, acute viral syndrome caused by any of the four serotypes of dengue virus (DENV). 1. In 2019, the World Health Organization designated dengue as one of the top 10 global health threats. 2. An estimated 50 million to 100 million symptomatic cases occur globally each year.Precaution:-drink papaya leaf juice,avoid fatty spicy food,keep mosquitos away,keep hydrated"],
+     "context": [""]
+    },
+    {"tag": "Typhoid",
+     "patterns": ["Typhoid","belly pain","toxic look (typhos)","diarrhoea","abdominal pain","constipation","nausea","headache","high fever","fatigue","vomiting","chills"],
+     "responses": ["Typhoid-Typhoid fever, also known as typhoid, is a disease caused by Salmonella serotype Typhi bacteria.Symptoms may vary from mild to severe, and usually begin 6 to 30 days after exposure.Often there is a gradual onset of a high fever over several days.This is commonly accompanied by weakness,abdominal pain,constipation,headaches, and mild vomiting.Some people develop a skin rash with rose colored spots.In severe cases, people may experience confusion.Without treatment, symptoms may last weeks or months.Diarrhea is uncommon.Other people may carry the bacterium without being affected, but they are still able to spread the disease to others.Typhoid fever is a type of enteric fever, along with paratyphoid fever.Precaution:-eat high calorie vegitables,antiboitic therapy,consult doctor,medication"],
+     "context": [""]
+    },
+    {"tag": "Heart attack",
+     "patterns": ["Heart attack","chest pain","sweating","breathlessness","vomiting"],
+     "responses": ["A heart attack occurs when one or more of your coronary arteries becomes blocked. Over time, a buildup of fatty deposits, including cholesterol, form substances called plaques, which can narrow the arteries (atherosclerosis). This condition, called coronary artery disease, causes most heart attacks.Precaution:-call ambulance,chew or swallow asprin,keep calm"],
+     "context": [""]
+    },
+    {"tag": "Tuberculosis",
+     "patterns": ["Tuberculosis","blood in sputum","chest pain","phlegm","malaise","swelled lymph nodes","yellowing of eyes","mild fever","loss of appetite","sweating","breathlessness","high fever","cough","weight loss","fatigue","vomiting","chills"],
+     "responses": ["Tuberculosis-Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections show no symptoms, in which case it is known as latent tuberculosis. About 10% of latent infections progress to active disease which, if left untreated, kills about half of those affected. The classic symptoms of active TB are a chronic cough with blood-containing mucus, fever, night sweats, and weight loss. It was historically called consumption due to the weight loss. Infection of other organs can cause a wide range of symptoms.Precaution:-cover mouth,consult doctor,medication,rest"],
+     "context": [""]
+    }
+    
+    
+]
+}
+
